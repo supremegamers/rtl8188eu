@@ -142,7 +142,7 @@ rtk_core :=	core/rtw_cmd.o \
 
 8188eu-y += $(_OS_INTFS_FILES)
 
-obj-$(CONFIG_RTL8188EU) := 8188eu.o
+obj-m := $(MODULE_NAME).o
 
 else
 
