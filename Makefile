@@ -406,7 +406,7 @@ ifeq ($(CONFIG_RTL8723B), y)
 8188eu-$(CONFIG_MP_INCLUDED)+= rtw_bt_mp.o
 endif
 
-obj-m := $(MODULE_NAME).o
+obj-m := 8188eu.o
 
 else
 
