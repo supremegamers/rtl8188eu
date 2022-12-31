@@ -626,7 +626,7 @@ void rtw_unregister_netdevs(struct dvobj_priv *dvobj)
 		if (padapter->DriverState != DRIVER_DISAPPEAR) {
 			struct wireless_dev *wdev = padapter->rtw_wdev;
 
-			wdev->connected = NULL;
+			wdev->connected = 0;
 			pnetdev->reg_state = NETREG_REGISTERED;
 			unregister_netdev(pnetdev); /* will call netdev_close() */
 			rtw_proc_remove_one(pnetdev);
